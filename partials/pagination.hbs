@@ -1,0 +1,16 @@
+<nav class="transparent pagination" role="navigation">
+  <div class="col s4"><!-- s4 is a dirty hack, toget it working on index and tags.
+    See default.hbs where pagination is inside of m9 -->
+    {{#if prev}}
+        <a href="{{page_url prev}}">&larr; Neuere Posts</a>
+    {{/if}}
+  </div>
+  <div class="col s4 center">
+    <span>Seite {{page}} von {{pages}}</span>
+  </div>
+  <div class="col s4 right-align">
+    {{#if next}}
+        <a href="{{page_url next}}">Ältere Posts &rarr;</a>
+    {{/if}}
+  </div>
+</nav>

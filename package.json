@@ -1,0 +1,32 @@
+{
+  "name": "materializecss-ghost",
+  "description": "Ghost theme based on materialzecss",
+  "demo": "https://hikingbug.org",
+  "version": "1.0.0",
+  "engines": {
+      "ghost": ">=1.0.0"
+  },
+  "license": "MIT",
+  "author": {
+      "name": "Simon Walter",
+      "email": "simon.walter@hp-factory.de",
+      "url": "https://github.com/materializecss-ghost"
+  },
+  "config": {
+    "posts_per_page": 6
+  },
+  "gpm": {
+      "type": "theme",
+      "categories": [
+          "Minimal",
+          "Blog",
+          "Hiking",
+          "GPX"
+      ]
+  },
+  "keywords": [
+      "ghost",
+      "theme",
+      "materialzed"
+  ]
+}

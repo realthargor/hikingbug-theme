@@ -1,0 +1,20 @@
+<article class="card large{{post_class}}" style="max-width:270px; ">
+  <div class="card-image waves-effect waves-block waves-light">
+     <img class="activator" src="{{{feature_image}}}" style="object-fit: cover; height:200px; ">
+  </div>
+  <div class="card-content">
+     <span class="card-title activator" style="height:70px">
+      <i class="material-icons right">more_vert</i>{{title}}
+     </span>
+      <p><a href="{{url}}">WEITERLESEN</a></p>
+  </div>
+  <div class="card-reveal">
+     <span class="card-title grey-text text-darken-4">
+      <i class="material-icons right">close</i>
+      <a href="{{url}}">{{title}}</a>
+     </span>
+      <section>
+         {{excerpt words="40"}}... <a href="{{url}}">WEITERLESEN</a>
+      </section>
+   </div>
+</article>

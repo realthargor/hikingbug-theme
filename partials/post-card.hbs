@@ -1,0 +1,27 @@
+<article class="card large {{post_class}}">
+  {{#if feature_image}}
+    <header class="card-image">
+      <a href="{{url}}">
+        <img src="{{feature_image}}" style="object-fit: cover; ">
+      </a>
+    </header>
+  {{/if}}
+  <div class="card-content">
+    <header class="card-title">
+      <a href="{{url}}">{{title}}</a>
+    </header>
+    <section>
+      {{excerpt words="26"}}... <a href="{{url}}">WEITERLESEN</a> <small>{{reading_time seconds=(t "(Lesezeit unter 1 Minute)") minute=(t "(Lesezeit: 1 Minute)") minutes=(t "(Lesezeit: % Minuten)")}}</small>
+    </section>
+  </div>
+  <footer class="card-action">
+    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+    {{author}}
+    {{#if tags}}
+      in
+      {{#foreach tags}}
+        <a href="{{url}}" class="chip">{{name}}</a>
+      {{/foreach}}
+    {{/if}}
+  </footer>
+</article>

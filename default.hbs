@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0"/>
+  <title>{{meta_title}}</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{asset "css/materialize.css" }}" type="text/css" rel="stylesheet" media="screen"/>
+  <link href="{{asset "css/style.css" }}" type="text/css" rel="stylesheet" media="screen"/>
+
+  {{> googleanalytics}}
+
+  {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+
+  <!-- jquery is used everywhere ...-->
+  <script src="{{asset "js/jquery-2.1.1.js"}}"></script>
+
+  {{{body}}}
+
+  <!--   Footer   -->
+  <footer class="page-footer">
+    <section class="container">
+      <div class="row">
+        <div class="col l6 s12">
+            {{@blog.title}} - {{@blog.description}}
+        </div>
+
+        <div class="col l6 s12 right-align">
+            <a href="/datenschutz">Datenschutz</a>
+            <a href="/impressum">Impressum</a>
+        </div>
+      </div>
+    </section>
+    <div class="footer-copyright">
+      <div class="container">
+        Running on <a href="http://ghost.io">Ghost</a>; Design made with <a href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+  {{ghost_foot}}
+
+  <!-- non important scripts -->
+  <script src="{{asset "js/materialize.js"}}"></script>
+  <script src="{{asset "js/init.js"}}"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+    <nav class="transparent">
+      <div class="nav-wrapper" >
+
+        <div class="row">
+          <div class="col s11 m9">
+            <!-- nav desktop -->
+            <ul id="nav-desktop" class="left hide-on-med-and-down">
+              {{#foreach navigation}}
+                <li><a href="{{url absolute="true"}}">{{label}}</a></li>
+              {{/foreach}}
+            </ul>
+
+            <!-- nav mobile -->
+            <ul id="nav-mobile" class="side-nav transparent">
+              {{#foreach navigation}}
+                <li><a href="{{url absolute="true"}}" class="white-text">{{label}}</a></li>
+              {{/foreach}}
+            </ul>
+
+            <a href="#" data-activates="nav-mobile" class="button-collapse white-text"><i class="material-icons">menu</i></a>
+          </div>
+          <div class="col s1 m3">
+            <!-- logo -->
+            <a id="logo-container" href="{{@blog.url}}" class="white-text right"><img src="{{@blog.logo}}" style="max-height: 50px;" alt="logo"></a>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </nav>

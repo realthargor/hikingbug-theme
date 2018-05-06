@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-content">
+    <div class="card-title">Tags</div>
+    {{#get "tags" include="count.posts" order="count.posts desc" limit="7"}}
+      {{#foreach tags}}
+        <a href="{{url}}" class="chip">{{name}} ({{count.posts}})</a>
+      {{/foreach}}
+    {{/get}}
+  </div>
+</div>
+<div class="card">
+  <div class="card-content valign-wrapper">
+    <a href="{{@blog.url}}/rss/"><i class="small material-icons">rss_feed</i></a> <a href="{{@blog.url}}/rss/">RSS Feed</a>
+  </div>
+</div>

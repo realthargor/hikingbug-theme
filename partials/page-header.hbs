@@ -1,0 +1,16 @@
+{{#if feature_image}}
+<header class="section" style="background-image: url({{feature_image}}); background-size: cover">
+{{else}}
+<header class="section" style="background-image: url({{@blog.cover_image}}); background-size: cover">
+{{/if}}
+  <h1 class="header center white-text" style="opacity:0.8">{{@blog.title}}</h1>
+  <div class="row center" style="padding-bottom: 03vw">
+    <h5 class="header col s12 white-text" style="opacity:0.8">{{@blog.description}}</h5>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      {{{navigation}}}
+    </div>
+  </div>
+</header>

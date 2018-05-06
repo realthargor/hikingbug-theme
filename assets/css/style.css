@@ -1,0 +1,190 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+a {
+   color: #78909c;
+}
+a:hover {
+   color: #90a4ae;
+}
+
+/** and the same color for links in cards */
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+ color: #78909c
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+ color: #90a4ae
+}
+
+/** reduced container-size for large screens */
+@media only screen and (min-width: 1200px) {
+ .container {
+   width: 60%;
+ }
+}
+@media only screen and (min-width: 1600px) {
+ .container {
+   width: 50%;
+ }
+}
+
+/** change post template for overlay */
+.post-template .card-content {
+  background: white;
+  margin: 0 5% 0 5%;
+  padding: 0.5em 1em 0.5em 1.5em;
+}
+
+/** smaller title font-size */
+h1 {
+  font-size: 3.2rem;
+}
+
+/** make img in cards responsive, class=image-responsive-img can't be added because the html is generated from markdown */
+.kg-card-markdown img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.6em 0 0.6em; /** spacing between text and images */
+  cursor: zoom-in; /** zoom cursor */
+}
+
+/** easy way to define none 100% images inside a post */
+.kg-card-markdown img[src$='#small'] { width: 250px }
+.kg-card-markdown img[src$='#medium'] { width: 350px }
+
+/** image fullscreen in posts */
+.kg-card-markdown img:-webkit-full-screen { cursor:zoom-out; width: auto !important; height: auto; max-width: 100vw; max-height: 100vh; display: block; }
+.kg-card-markdown img:-moz-full-screen { cursor:zoom-out; width: auto; height: auto; max-width: 100vw; max-height: 100vh; display: block; }
+.kg-card-markdown img:-ms-fullscreen { cursor:zoom-out; width: auto; height: auto; max-width: 100vw; max-height: 100vh; display: block; }
+.kg-card-markdown img:fullscreen { cursor:zoom-out; width: auto; height: auto; max-width: 100vw; max-height: 100vh; display: block; }
+
+/** round borders around cards (also relevant for sidebar)*/
+.card {
+  border-radius: 5px 5px 0 0;
+}
+.card-image {
+  border-radius: 5px 5px 0 0;
+}
+
+/** reduced fontsize and line height for cards title */
+.card .card-content .card-title {
+    line-height: 24px;
+}
+.card .card-title {
+    font-size: 20px;
+}
+
+/** lists in markdown with icons and padding */
+.kg-card-markdown ul {
+	list-style-type: initial; padding-left: 2em; margin-top: 0.3em; margin-bottom: 0.5em;
+}
+.kg-card-markdown ul li {
+  list-style-type: initial;
+}
+
+/** we want margin/padding between p and nice sizes for ## and ### */
+.card .card-content p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  margin: 1em 0em 1em 0em;
+}
+.kg-card-markdown h2 {
+  font-size: 2.0em;
+  margin: 1em 0 .3em;
+}
+.kg-card-markdown h3 {
+  font-size: 1.5em;
+  margin: 1em 0 .3em;
+}
+.kg-card-markdown h4 {
+  font-size: 1.2em;
+  margin: 1em 0 .3em;
+}
+
+/** "Tag (count)" should not be linebreaked */
+.chip {
+  white-space: nowrap;
+  height: auto;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+/** not so much spacing between tags */
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  margin-right: 0px;
+}
+
+/** override color from materialized for pagination */
+nav {
+  color: #000000;
+}
+nav a {
+  color: #78909c;
+}
+
+/** Navigation */
+nav {
+    box-shadow: none;
+}
+nav ul a:hover {
+    border-bottom: 2px solid white;
+    color: white !important;
+    opacity: 0.8;
+}
+/** reduced from 300 which is too much on mobile */
+.side-nav {
+    width: auto;
+}
+
+/** Not so much space at the end of the navigation */
+.section {
+    padding-bottom: 0;
+}
+
+/** sidebar */
+aside .card {
+  background-color: #eceff1; /** blue-grey lighten-5 */
+}
+
+/** Table */
+
+/** reduced padding for more content in card (touren)*/
+td, th {
+    padding: 2.5px;
+}
+
+
+/** Footer */
+
+/** fix the footer on the bottom */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+main {
+  flex: 1 0 auto;
+}
+
+/** change color of footer */
+.page-footer {
+  color: #cfd8dc;
+  background-color: #203540;
+}
+.page-footer a {
+  color: #cfd8dc;
+  text-decoration: underline;
+}
+.page-footer a:hover {
+  color: #90a4ae;
+}
+.page-footer .footer-copyright {
+  color: #cfd8dc;
+  background-color: #042335;
+}

@@ -1,0 +1,30 @@
+{{!< default}}
+
+{{> default-header}}
+
+<!--   Main Content   -->
+<div class="container">
+  <div class="section">
+    <div class="row">
+
+      <!--   Main Bar   -->
+      <main class="col s12 m9">
+        <!-- This is the post loop - each post will be output using this markup -->
+        {{#foreach posts}}
+          {{> post-card}}
+        {{/foreach}}
+      </main>
+
+      <aside class="col s12 m3">
+        {{> sidebar}}
+      </aside>
+
+
+    </div>
+    <div class="row">
+      <section class="col s12 m9">
+        {{pagination}}
+      </section>
+    </div>
+  </div>
+</div>

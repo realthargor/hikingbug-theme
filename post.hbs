@@ -1,0 +1,57 @@
+{{!< default}}
+
+<div class=" background-color: black">
+  <div class="container">
+    <div class="section">
+      {{{navigation}}}
+    </div>
+  </div>
+</div>
+
+{{#post}}
+
+<main class="container">
+  <section class="section">
+    <div class="row">
+      <div class="col s12 m12">
+
+        <article class="card {{post_class}}">
+          <header class="section no-pad-bot center-align">
+            <time datetime="{{date format="YYYY-MM-DD"}}" style="color:#bdbdbd; font-size:15px">{{date format="D MMMM YYYY"}}</time>
+            <h1 class="header center black-text">{{title}}</h1>
+            {{#if feature_image}}
+              <figure style="background-image:url({{feature_image}}); margin: 0 0 -80px; height:400px; background-size:cover; background-position:center"></figure>
+              {{/if}}
+          </header>
+
+          <div class="card-content">
+              {{content}}
+          </div>
+
+          <footer class="card-action" style="display:flex; align-items: center; ">
+
+            {{#author}}
+              {{#if profile_image}}
+    	         <img src="{{profile_image}}" class="circle responsive-img" style="height:30px; width:30px; margin-right:5px" alt="{{name}}'s Picture" />
+              {{/if}}
+            {{/author}}
+            <div style="margin-right:5px">
+              {{author}}
+            </div>
+
+            {{#if tags}}
+              in
+              <div style="margin-left:5px">
+              {{#foreach tags}}
+                <a href="{{url}}" class="chip">{{name}}</a>
+              {{/foreach}}
+              </div>
+            {{/if}}
+
+          </footer>
+        </article>
+
+  </section>
+</main>
+
+{{/post}}
