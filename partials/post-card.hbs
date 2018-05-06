@@ -11,14 +11,14 @@
       <a href="{{url}}">{{title}}</a>
     </header>
     <section>
-      {{excerpt words="26"}}... <a href="{{url}}">WEITERLESEN</a> <small>{{reading_time seconds=(t "(Lesezeit unter 1 Minute)") minute=(t "(Lesezeit: 1 Minute)") minutes=(t "(Lesezeit: % Minuten)")}}</small>
+      {{excerpt words="26"}}... <a href="{{url}}">{{t "Read More"}}</a> <small>{{reading_time minute=(t "1 min read") minutes=(t "% min read")}}</small>
     </section>
   </div>
   <footer class="card-action">
-    <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+    <time class="post-date" datetime="{{date}}">{{date}}</time>
     {{author}}
     {{#if tags}}
-      in
+      {{t "on"}}
       {{#foreach tags}}
         <a href="{{url}}" class="chip">{{name}}</a>
       {{/foreach}}

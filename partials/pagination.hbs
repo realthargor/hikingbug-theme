@@ -2,15 +2,15 @@
   <div class="col s4"><!-- s4 is a dirty hack, toget it working on index and tags.
     See default.hbs where pagination is inside of m9 -->
     {{#if prev}}
-        <a href="{{page_url prev}}">&larr; Neuere Posts</a>
+        <a href="{{page_url prev}}">&larr; {{t "Newer posts"}}</a>
     {{/if}}
   </div>
   <div class="col s4 center">
-    <span>Seite {{page}} von {{pages}}</span>
+    <span>{{t "Page {page} of {pages}" page=page pages=pages}}</span>
   </div>
   <div class="col s4 right-align">
     {{#if next}}
-        <a href="{{page_url next}}">Ältere Posts &rarr;</a>
+        <a href="{{page_url next}}">{{t "Older posts"}} &rarr;</a>
     {{/if}}
   </div>
 </nav>
