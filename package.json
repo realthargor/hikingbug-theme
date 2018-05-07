@@ -1,6 +1,6 @@
 {
-  "name": "materializecss-ghost",
-  "description": "Ghost theme based on materialzecss",
+  "name": "hikingbug",
+  "description": "Ghost theme for hiking and traveling based on materialzecss",
   "demo": "https://hikingbug.org",
   "version": "1.0.0",
   "engines": {
@@ -21,6 +21,7 @@
           "Minimal",
           "Blog",
           "Hiking",
+          "Travelling"
           "GPX"
       ]
   },
