@@ -24,7 +24,7 @@
 1. activate theme
 1. adjust language
 1. create pages **/legal** and **/dataprotection**. Otherwise remove the links from _default.hbs_
-1. (optional) add a menu item for **/tours**, modify the file _page-tours.hbs_ and upload GPX files.
+1. (optional) add a menu item for **/tours** and create a page with this URL, modify the file _page-tours.hbs_ and upload GPX files.
 
 ## Example post
 

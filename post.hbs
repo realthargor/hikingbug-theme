@@ -17,7 +17,7 @@
 
         <article class="card {{post_class}}">
           <header class="section no-pad-bot center-align">
-            <time datetime="{{date format="YYYY-MM-DD"}}" style="color:#bdbdbd; font-size:15px">{{date format="D MMMM YYYY"}}</time>
+            <time class="grey-text text-lighten-1" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
             <h1 class="header center black-text">{{title}}</h1>
             {{#if feature_image}}
               <figure style="background-image:url({{feature_image}}); margin: 0 0 -80px; height:400px; background-size:cover; background-position:center"></figure>
@@ -30,14 +30,16 @@
 
           <footer class="card-action" style="display:flex; align-items: center; ">
 
-            {{#author}}
-              {{#if profile_image}}
-    	         <img src="{{profile_image}}" class="circle responsive-img" style="height:30px; width:30px; margin-right:5px" alt="{{name}}'s Picture" />
-              {{/if}}
-            {{/author}}
-            <div style="margin-right:5px">
-              {{author}}
-            </div>
+            {{#if authors}}
+              {{#foreach authors}}
+                {{#if profile_image}}
+    	           <img src="{{profile_image}}" class="circle responsive-img" style="height:30px; width:30px; margin-right:5px" alt="{{name}}'s Picture" />
+                {{/if}}
+                <div style="margin-right:5px">
+                  <a href="{{url}}" title="{{name}}" class="author author-{{id}} {{slug}}">{{name}}</a>
+                </div>
+              {{/foreach}}
+            {{/if}}
 
             {{#if tags}}
               {{t "on"}}
