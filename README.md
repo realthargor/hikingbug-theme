@@ -1,5 +1,5 @@
 # Hikingbug - Materialize Ghost Theme
-[Ghost](http://www.ghost.io) theme for hiking and traveling  based on [materialize](http://materializecss.com/).
+[Ghost](http://www.ghost.io) theme for hiking and traveling  based on [Materialize](http://materializecss.com/).
 We developed and used it for our on blog: [hikingbug.org](https://hikingbug.org)
 
 ## Features
