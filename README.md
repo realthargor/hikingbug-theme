@@ -12,11 +12,11 @@ We developed and used it for our on blog: [hikingbug.org](https://hikingbug.org)
 * fullscreen zoom for images inside a post
 * external links open in new tabs
 * tour page with
- * flickr gallery integration
- * link to tour reports
- * cards with revealable details
- * statistics table
- * OpenStreetMap integration to view GPX track with fullscreen support
+   * flickr gallery integration
+   * link to tour reports
+   * cards with revealable details
+   * statistics table
+   * OpenStreetMap integration to view GPX track with fullscreen support
 * reading time
 * clean page to show all post with a tag using smaller cards
 
@@ -38,7 +38,8 @@ Example Post to demonstrate how to
 * use the different image sizes in a post
 * use subheaders
 
-```##  Subheader
+```
+##  Subheader
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -56,4 +57,5 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ![](/content/images/sampleimage.jpg#small) ![](/content/images/sampleimage.jpg#small) ![](/content/images/sampleimage.jpg#small)
 
-Have fun!```
+Have fun!
+```
