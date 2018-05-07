@@ -4,30 +4,42 @@
   "demo": "https://hikingbug.org",
   "version": "1.0.0",
   "engines": {
-      "ghost": ">=1.22.0"
+    "ghost": ">=1.22.0"
   },
   "license": "MIT",
   "author": {
-      "name": "Simon Walter",
-      "email": "simon.walter@hp-factory.de",
-      "url": "https://github.com/materializecss-ghost"
+    "name": "Simon Walter",
+    "email": "simon.walter@hp-factory.de",
+    "url": "https://github.com/realthargor/hikingbug-theme"
   },
   "config": {
     "posts_per_page": 6
   },
   "gpm": {
-      "type": "theme",
-      "categories": [
-          "Minimal",
-          "Blog",
-          "Hiking",
-          "Travelling"
-          "GPX"
-      ]
+    "type": "theme",
+    "categories": [
+      "Minimal",
+      "Blog",
+      "Hiking",
+      "Travelling",
+      "GPX"
+    ]
   },
   "keywords": [
-      "ghost",
-      "theme",
-      "materialzed"
-  ]
+    "ghost",
+    "theme",
+    "materialzed"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/realthargor/hikingbug-theme.git"
+  },
+  "bugs": "https://github.com/realthargor/hikingbug-theme/issues",
+  "contributors": "https://github.com/realthargor/hikingbug-theme/graphs/contributors",
+  "scripts": {
+    "test": "gscan ./"
+  },
+  "devDependencies": {
+    "gscan": "^1.4.0"
+  }
 }
