@@ -1,5 +1,5 @@
 # Materialize Ghost Theme
-[Ghost Theme](http://www.ghost.io) based on [materialize](http://materializecss.com/)
+[Ghost](http://www.ghost.io) theme based on [materialize](http://materializecss.com/)
 
 ## Features
 * responsive
@@ -20,12 +20,11 @@
 
 
 ## Install
-
 1. upload zip file
 1. activate theme
 1. adjust language
 1. create pages **/legal** and **/dataprotection**. Otherwise remove the links from _default.hbs_
-1. (optional) add a menue item for **/touren**, modify the file _page-touren.hbs_ and upload GPX files.
+1. (optional) add a menu item for **/tours**, modify the file _page-tours.hbs_ and upload GPX files.
 
 ## Example post
 
