@@ -22,9 +22,8 @@ We developed and used it for our on blog: [hikingbug.org](https://hikingbug.org)
 
 
 ## Install
-1. upload zip file
-1. activate theme
-1. adjust language
+1. download repository content as zip file
+1. [install the theme ](https://help.ghost.org/article/31-upload-themes)
 1. create pages **/legal** and **/dataprotection**. Otherwise remove the links from _default.hbs_
 1. (optional) add a menu item for **/tours** and create a page with this URL, modify the file _page-tours.hbs_ and upload GPX files.
 
